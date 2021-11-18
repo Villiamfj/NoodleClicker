@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Page Title Goes Here</title>
+  <meta name="description" content="Description Goes Here">
+</head>
+<body>
+    <img id="noodle" src="https://dsdam.imgix.net/services/assets.img/id/613e859d-c7ab-4d96-8cc0-ea582ae2d48e/size/FULLSCALE.jpg?w=500&auto=format&q=60&h=500&fit=fill&fill=solid&fill-color=ffffff&trim=color&&trim-tol=10" alt="Something">
+    <h1 id="text">Noodles: 0</h1>
+</body>
+<script>
+    let clicks = 0;
+    const image = document.getElementById("noodle");
+    const header = document.getElementById("text");
+    image.onclick = () => {
+        clicks ++;
+        header.innerText = "Noodles: " + clicks;
+    };
+</script>
+</html>
